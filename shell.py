@@ -4,6 +4,7 @@ import os
 import getpass
 import socket
 import helpcmd
+import calc
 
 username = getpass.getuser()
 hostname = socket.gethostname().split('.')[0]
@@ -21,6 +22,8 @@ def shell():
                     os.chdir(parts[1])
                 else:
                     os.chdir(os.path.expanduser("~"))
+        if parts[0] == 'calc':
+            calc.init()
             except FileNotFoundError as e:
                 print(f"cd: {e}")
         elif parts[0] == 'exit':
