@@ -7,6 +7,8 @@ This is my attempt at a ~~great~~ not very good Python-based Linux shell.
 
 Instructions:
 
+`git clone https://github.com/supercoderguy/Python-Shell.git`
+
 `chmod +x /path/to/shell.py`
 
 `sudo ln -s /path/to/shell.py /usr/local/bin/pythonshell`
